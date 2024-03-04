@@ -20,6 +20,9 @@ initialise();
 export const App: React.FC = () => {
   useServiceWorkerUpdate();
 
+  console.log("USER AGENT", navigator.userAgent);
+  console.log("WINDOW.ETHEREUM", window.ethereum);
+
   return (
     <>
       <Auth.Provider>
